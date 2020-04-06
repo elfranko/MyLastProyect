@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','VinoController@index');
+Route::post('/addvinito','VinoController@store');
+Route::get('/usuarios','UserController@index');
+Route::post('/addusuario','UserController@store');
